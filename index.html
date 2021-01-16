@@ -62,7 +62,7 @@ https://templatemo.com/tm-516-known
                          <li><a href="#courses" class="smoothScroll">Cursos</a></li>
                          <li><a href="#testimonial" class="smoothScroll">Testimonios</a></li>
                          <li><a href="#testimonial" class="smoothScroll">Precios</a></li>
-                         <li><a href="#contact" class="smoothScroll">Contacto</a></li>
+                         <li><a href="#contact" class="smoothScroll">Inscripción</a></li>
                     </ul>
 
                     <ul class="nav navbar-nav navbar-right">
@@ -1144,21 +1144,39 @@ https://templatemo.com/tm-516-known
                <div class="row">
 
                     <div class="col-md-6 col-sm-12">
-                         <form id="contact-form" role="form" action="" method="post">
+                         <form id="contact-form" role="form" action="POST" data-netlify="true" method="post">
                               <div class="section-title">
-                                   <h2>Contáctanos <small>¡Hablemos!</small></h2>
+                                   <h2>Confirma tu Inscripción <small>Envianos el comprobante de pago para que te confirmemos la inscripción</small></h2>
                               </div>
 
                               <div class="col-md-12 col-sm-12">
-                                   <input type="text" class="form-control" placeholder="Ingresa nombre completo" name="name" required="">
-                    
-                                   <input type="email" class="form-control" placeholder="Ingresa correo electrónico" name="email" required="">
+                                  <div class="fild">
+                                   <input type="text" class="form-control" placeholder="Nombre Completo" name="name" required="">
 
-                                   <textarea class="form-control" rows="6" placeholder="Escribenos tu mensaje" name="message" required=""></textarea>
+                                  </div>
+                    
+                                  <div class="field">
+                                   <input type="email" class="form-control" placeholder="Email" name="email" required="">
+
+                                  </div>
+                                   <div class="field">
+                                        <textarea class="form-control" rows="6" placeholder="Mensaje" name="message" required=""></textarea>
+
+                                   </div>
+                                   <div class="field">
+                                        <input type="file" rows="6" placeholder="Comprobante de Pago" name="myfile" id="myfile" >
+                                   </div>
+
+                                   <div class="field">
+                                        <div data-netlify-recaptcha="true">
+
+                                        </div>
+                                   </div>
+
                               </div>
 
                               <div class="col-md-4 col-sm-12">
-                                   <input type="submit" class="form-control" name="send message" value="Enviar Mensaje">
+                                   <input type="submit" class="form-control" name="send message" value="Enviar Comprobante">
                               </div>
 
                          </form>
